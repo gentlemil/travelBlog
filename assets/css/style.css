@@ -1,0 +1,532 @@
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    transition: .9s all;
+}
+
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-size: 700;
+    color: white;
+    background: green;
+    border: 1px solid green;
+    display: block;
+    padding: 15px 30px;
+    min-width: 80px;
+    text-align: center;     
+}
+
+.btn.while-border {
+    background: none ;
+    border-color: white;
+}
+
+.btn:hover{
+    background: none;
+    border-color: white;
+}
+
+.btn.while-border:hover{
+    background: green;
+    border-color: green;
+}
+
+#header{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#header .container{
+    display: flex;
+    flex-direction: column;
+    /* ustala czy napisy ustawic w rzedzie/szeregu/odwrotnie czy nie itd. */
+    align-items: center;
+    /* wysrodkowanie, do prawej/lewej strony itp. */
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+#header .container h4{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    margin: 0 0 30px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+#header .container h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 50px 0 30px 0;
+}
+
+#header .container p.description{
+    color: white;
+    font-size: 15px;
+    width: 85%;
+    margin: 10px auto 20px 0;
+    line-height: 1.5;
+    text-align: center;
+}
+#header .container .buttons{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header .container .buttons li{
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+#header .container .buttons li:last-child{
+    margin: 0;
+}
+
+#header .mouse{
+    display: block;
+    width: 25px;
+    height: 45px;
+    border-radius: 20%;
+    border: 2px solid white;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 20px;
+    left: 50%;
+    
+
+}
+
+#header .mouse .dot{
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: white;
+    position: relative;
+    transform: translateX(-50%);
+    top: 30%;
+    left: 50%;
+}
+
+/* SEKCJA DRUGA - NASZA HISTORIA */
+
+#history{
+    display: flex;
+    background-image: url(../img/header.jpg);
+}
+
+#history .container {
+    background-color: #000000;
+    margin: 30px;
+    display: flex;
+}
+
+#history .container  .left{
+    width: 50%;
+    background-image: url(../img/history.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#history .container  .left img{
+    display: none;
+    /* width: 100%; */
+    /* visibility: hidden; */
+}
+
+#history .container  .right{
+    width: 50%;
+    background-color: #000000;
+    height: 500px;
+}
+
+#history .container  .right h2{
+    color: #ffffff;
+    padding: 60px 10px 15px 10px ;
+    font-size: 40px;
+}
+
+#history .container  .right p{
+    color: #ffffff;
+    padding: 0 10px 10px 10px;
+    text-align: justify;
+}
+
+#history .container  .right a{
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    padding: 5px 3px;
+    margin: 10px;
+    align-items: center;
+}
+
+/* SEKCJA TRZECIA - TRIPS */
+
+#odwiedzone-kraje{
+    background-color: #000000;
+    padding: 100px 0;
+}
+
+#odwiedzone-kraje .container .boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#odwiedzone-kraje .container .boxes .box{
+    margin: 15px 0;
+    padding: 0 15px;
+    width: calc(100%/3);
+}
+
+#odwiedzone-kraje .container .boxes .box .background{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+    transition: 0.3s all;
+}
+
+#odwiedzone-kraje .container .boxes .box .background:hover{
+    transition: 0.3s all;
+    background-color: #000000;
+    background-image: none !important;
+    /* WAZNE! ZAPAMIETAC! */
+
+}
+
+#odwiedzone-kraje .container .boxes .box .background .icon{
+    color: #ffffff;
+    font-size: 40px;
+}
+
+#odwiedzone-kraje .container .boxes .box .background .title{
+    font-size: 30px;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+#odwiedzone-kraje .container .boxes .box .background .text{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0 0 10px 0;
+}
+
+#odwiedzone-kraje .container .boxes .box .background .back{
+    background-position: center center;
+    background-size: cover;
+    padding: 0;
+    display: flex;
+}
+
+/* SEKCJA DRUGA - CZCIONKI */
+
+.global-header{
+    text-align: center;
+}
+
+.global-header h4{
+    font-family: 'Liu Jian Mao Cao', cursive;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    
+    border-bottom: 1px solid #ffffff;
+    display: inline-block;
+    padding: 0 0 20px 0;
+}
+
+.global-header h2{
+    font-family: 'Anton', sans-serif;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+/* SEKCJA CZWARTA - DIARY */
+
+#article{
+    /* height: 100%; */
+    background-image: url(../img/header.jpg);
+    min-width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#article .container{
+    display: flex;
+    margin: 0 30px;
+}
+
+/* ----- LEWA STRONA ----- */
+
+#article .container .left{
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#article .container .left .title{
+    display: flex;
+    flex-direction: row;
+    background-color: #100e0f;
+    margin: 40px 0 50px 0;
+    padding: 20px 10px;
+    width: 92%;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#article .container .left .title .image{
+    display: flex;
+    width: 20%;
+    padding: 10px 25px 10px 10px;
+}
+#article .container .left .title .image img{
+    display: flex;
+    width: 100%;
+    border-radius: 80%;
+}
+
+/* #article .container .left .title .info{
+} */
+
+#article .container .left .title .info h4{
+    color: #ffffff;
+    display: flex;
+}
+
+#article .container .left  .layout{
+    width: 92%;
+    padding: 20px 10px;
+    background-color: #100e0f;
+    opacity: 0.2;
+}
+
+#article .container .left .layout p{
+    color: white;
+}
+
+/* ----- PRAWA STRONA - GALERIA ----- */
+
+#article .container .gallery{
+    display: flex;
+    width: 70%;
+    height: 100vh;
+}
+
+#article .container .gallery .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1 fr 1fr 1fr 1fr;
+    height: 100vh;
+}
+
+/*  ustawiamy poszczegolne zdjecia */
+
+#article .container .gallery .item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#article .container .gallery .item2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#article .container .gallery .item3{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#article .container .gallery .item4{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#article .container .gallery .item5{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#article .container .gallery .item6{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+#article .container .gallery .item7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#article .container .gallery .item8{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#article .container .gallery .item9{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#article .container .gallery .item10{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#article .container .gallery .item11{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#article .container .gallery .item12{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-image: 100%;
+}
+
+img:hover{
+    transform: scale(1.2);
+    transition-duration: 300ms;
+    filter: brightness(50%);
+}
+
+ /*  ------ NAVIGATION ------ */
+/* ------------------------- */
+
+#navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: #ffffff;
+    width: 100%;
+    padding: 15px 0;
+}
+
+#navigation .container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#navigation .container .logo a img{
+    width: 110px;
+    display: block;
+}
+
+#navigation .container .menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}    
+
+#navigation .container .menu ul li{
+    margin: 0 30px 0 0;
+}
+
+#navigation .container .menu ul li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+
+#navigation .container .menu ul li a::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ff7b00;
+    bottom: -5px;
+    transition: 0.4s all
+}
+
+#navigation .container .menu ul li a:hover::after{
+    width: 100%;
+}
+
+#navigation .container .menu ul li a:hover{
+        color: #ff7200
+}
+
+#navigation .container .icons ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation .container .icons ul li{
+    padding: 0 15px 0 0;
+}
+
+#navigation .container .icons ul li:last-child{
+    margin: 0;
+}
+
+#navigation .container .icons ul li a{
+    display: flex;
+    height: 30px;
+    width: 30px;
+    color: #ffffff;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#navigation .container .icons ul li a:hover{
+    transform: rotate(360deg) scale(1.2);
+}
